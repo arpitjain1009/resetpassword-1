@@ -1,7 +1,14 @@
+import { SecuritypageComponent } from './securitypage/securitypage.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
+import { ResetpageComponent } from './resetpage/resetpage.component';
 
-const routes: Routes = [];
+var routes: Routes = [
+  {path : "" , component :SecuritypageComponent},
+  {path : "2" , component :ResetpageComponent}
+
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
